@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <link rel="stylesheet" href="semantic.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src='userCreation.js'></script>
+
+</head>
+<body>
+    <div class="ui inverted menu"></div>    
+    <form id ="secondry-menu"class="ui secondary menu" >
+        <a href="userslist.html"  class="ui default button" type="Back" value="Back"  style=" margin-right: 8px;  margin-left: 8px;width: 122px;">Back</a>
+        <div id="right-menu" class="right menu" >
+
+           <input id="create" class="ui primary button" type="submit" value="Create User"  style=" margin-right: 8px;  margin-left: 8px;width: 122px;">
+            
+        </div>
+    </form>
+
+    <div class="ui main text container">
+        
+            <h3>Create New User</h3>
+            <div id='create-user' >
+                <form id="user-form" class="eight wide column">
+                    <div class="ui form">
+                        
+                        <div class="two fields">
+                            <div class=" field">
+                                <label>First Name</label>
+                                <input id="firstName" type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="field">    
+                                <label>Last Name</label>
+                                <input id="lastName" type="text" placeholder="Last Name">
+                            </div>
+                        </div>
+    
+                        <div class="two fields">
+                            <div class="field">    
+                                <label>Email Address</label>
+                                <input id="email" type="email" placeholder="user@email.com" required>
+                            </div>
+                            <div class="field">
+                                <label>Password</label>
+                                <input id="password" type="password" placeholder="Password" required>
+                            </div>
+                        </div>  
+                        
+                            <div class="field">    
+                                <label>Organisation Name</label>
+                                <input id="orgName" type="text" placeholder="Organisation Name" required>
+                            </div>
+                            
+                               
+                            <div class="field">    
+                                <label>Authority</label>
+                                <select id="authority" class="ui search dropdown selection" class="menu transition hidden">
+                                <option value="Admin">Admin</option>
+                                <option value="IntUser">Internal User</option>
+                                <option value="Vendor">Vendor</option>
+                                </select>
+                            </div>
+                            
+                                
+                            
+                                                   
+                            
+                
+                        
+                        
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

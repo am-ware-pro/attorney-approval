@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Invoice</title>
+    <link rel="stylesheet" href="semantic.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src='createInvoice.js'></script>
+
+</head>
+<body>
+    <div class="ui inverted menu"></div>   
+      
+    <form id ="secondry-menu"class="ui secondary menu" >
+        <a href="/home"  class="ui default button" type="Back" value="Back"  style=" margin-right: 8px;   margin-left: 8px;width: 122px;">Back</a>
+        <div id="right-menu" class="right menu" >
+
+           <input id="create" class="ui primary button" type="submit" value="Create Invoice"  style=" margin-right: 8px;  margin-left: 8px;width: 162px;">
+            
+        </div>
+    </form> 
+<div class="ui main text container">
+    
+        <h3>Create New Invoice</h3>
+        <div id='create-request' >
+            <form id="request-form" class="eight wide column">
+                <div class="ui form">
+                    
+                    <div class="two fields">
+                        <div class=" field">
+                            <label>Billing To</label>
+                            <input id="name" type="text" placeholder="Customer Name or Company Name">
+                        </div>
+                        <div class="field">    
+                            <label>Address</label>
+                            <input id="address" type="text" placeholder="Customer Address">
+                        </div>
+                    </div>
+
+                    
+                        <div class="field">    
+                            <label>Attorney Name</label>
+                            <input id="attorneyName" type="text" placeholder="Attorney" required>
+                        </div>
+                        
+                    
+                    <div class="two fields">
+                        <div class="field">
+                            <label>Attorney Grade</label>
+                            <select id="grade" class="ui search dropdown selection" class="menu transition hidden">
+                            <option value="Junior Assoicate">Junior Assoicate </option>
+                            <option value="Senior Associate ">Senior Associate </option>
+                            <option value="Junior Partner ">Junior Partner </option>
+                            <option value="Senior Partner ">Senior Partner </option>
+                            <option value="Foriegn Law Partner ">Foriegn Law Partner </option>
+                            </select>
+                            </div>
+                        <div class="field">
+                            <label>Service</label>
+                            <select id="service" class="ui search dropdown selection" class="menu transition hidden">
+                            <option value="Business Lawyer">Business Lawyer </option>
+                            <option value="Corporate Lawyer ">Corporate Lawyer </option>
+                            <option value="Employment and Labor Lawyer ">Employment and Labor Lawyer </option>
+                            <option value="Finance & Securities Lawyer ">Finance & Securities Lawyer </option>
+                            <option value="Merger and Acquisitions Lawyer ">Merger and Acquisitions Lawyer </option>
+                            <option value="Trial Lawyer ">Trial Lawyer </option>
+                            <option value="Private Sector Lawyer ">Private Sector Lawyer </option>
+                            <option value="Intellectual Property Lawyer ">Intellectual Property Lawyer </option>
+                            <option value="Divorce Lawyer ">Divorce Lawyer </option>
+                            <option value="Personal Injury Lawyer ">Personal Injury Lawyer </option>
+                            <option value="Digital Media and Internet Lawyer ">Digital Media and Internet Lawyer </option>
+                            <option value="Legal Malpractice Lawyer ">Legal Malpractice Lawyer </option>
+                            <option value="Family Lawyer ">Family Lawyer </option>
+                            <option value="Traffic Lawyer ">Traffic Lawyer </option>
+                            <option value="Estate Planning Lawyer ">Estate Planning Lawyer </option>
+                            <option value="Merger and Acquisitions Lawyer ">Merger and Acquisitions Lawyer </option>
+                            <option value="Criminal Defense Lawyer ">Criminal Defense Lawyer </option>
+                            <option value="Toxic Tort Lawyer">Toxic Tort Lawyer</option>
+                            <option value="Bankruptcy Lawyer">Bankruptcy Lawyer</option>
+                            <option value="Divorce Lawyer ">Divorce Lawyer </option>
+                            <option value="Civil Litigation Lawyer ">Civil Litigation Lawyer </option>
+                            <option value="Immigration Lawyer ">Immigration Lawyer </option>
+                            </select>
+                            </div>
+                            
+                            
+                    </div>
+                    <div class="field">
+                        <label>Service Description</label>
+                        <textarea id="description"rows="3"  placeholder="Short Description About Service" required></textarea>
+                      </div>
+                      <div class="two fields">
+                            <div class="field">    
+                             <label>Attorney Fee</label>
+                              <input id="fee" type="number" placeholder="0.00$" style="text-align: end"required>
+                            </div>
+                             <div class="field">    
+                             <label>Previous Due</label>
+                         <input id="prevDue" type="number" placeholder="0.00$"  style="text-align: end" required>
+                        </div>
+                    </div>
+
+                    <div class="field">    
+                        <label>Total Amount</label>
+                        <input id="totalAmount" type="number" placeholder="0.00$"  style="text-align: end" required>
+                    </div>
+                    
+            
+            </form>
+        </div>
+    
+
+
+</div>
+</body>
+</html>

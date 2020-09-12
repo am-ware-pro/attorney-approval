@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Invoice View</title>
+    <link rel="stylesheet" href="semantic.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src='invoiceList.js'></script>
+
+</head>
+<body>
+  <div class="ui inverted menu"></div>   
+      
+  <form id ="secondry-menu"class="ui secondary menu" >
+      <a href="/home"  class="ui default button" type="Back" value="Back"  style=" margin-right: 8px;   margin-left: 8px;width: 122px;">Back</a>
+      
+  </form> 
+    
+    <div  id='request-container' style="margin: auto;width: 96.5%;" >
+        
+      <h3></h3>  
+    <table class="ui fixed table">
+        <thead>
+          <tr><th>Invoice ID</th>
+          <th>Billed to</th>
+          <th>Status</th>
+          <th>Total Amount</th>
+          <th>Attorney Name</th>
+          <th>Service</th>
+          <th>Due Date</th>
+          
+
+        </tr></thead>
+        <script src='invoiceList.js'></script> 
+        
+      </table>
+</body>
+</html>

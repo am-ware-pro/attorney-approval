@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <link rel="stylesheet" href="semantic.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src='login.js'></script>
+
+</head>
+<body >
+     
+    <div style="background-image: url('Login.png');background-repeat: no-repeat;height: 100%;background-position: top;background-repeat: no-repeat;background-size: cover;">
+    
+
+         <div class="ui middle aligned center aligned grid">
+
+            <div  style="margin-block-start:15%;">
+           
+            <div  id='create-user' class="ui raised card" style=" padding: 32px; margin: auto;  "> 
+                <form id="user-form" >
+                    <div class="ui form">
+                        <h3>Login</h3>
+                            <div class="field">    
+                                <label>Email Address</label>
+                                <input id="email" type="email" placeholder="user@email.com" required>
+                            </div>
+                            <div class="field">
+                                <label>Password</label>
+                                <input id="password" type="password" placeholder="Password" required>
+                            </div>
+                        
+                            <input class="ui primary button" type="submit" value="Login">
+                        
+                            <div  id='request-container' >
+                              <script src='login.js'></script>
+                                 
+                
+                </form>
+            </div>
+        </div>
+    </div> 
+</div> 
+</body>
+</html>
