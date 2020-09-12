@@ -32,13 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
         const attorneyName = invoicesForm.querySelector('#attorneyName').value
         const createDate = date.toLocaleDateString()
         const description = invoicesForm.querySelector('#description').value
-        const dueDate =date.setDate(date.getDate()+ 10);
+        const dueDate =date.setDate(date.getDate()+ 30);
         const fee = invoicesForm.querySelector('#fee').value
         const id=0
         const name = invoicesForm.querySelector('#name').value
         const prevDue = invoicesForm.querySelector('#prevDue').value
         const servicetype = document.getElementById("service").selectedIndex
-        const service = document.getElementsByTagName("option")[servicetype].value
+        
+        var serviceOptionData = document.getElementsByTagName("option")
+        var service = ""
+        for(var serviceIndex = 0; serviceIndex < serviceOptionData.length; serviceIndex++) {
+            if(serviceOptionData.item(serviceIndex).index === servicetype) {
+                service = serviceOptionData.item(serviceIndex).value
+            }
+        }
         const status='Unapproved'
         const statusColor='yellow'
         const stausColor='yellow'

@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded',function(){
                               <div class="field">
                                   <label>Due on</label>
                                   <div class="ui disabled input">
-                                  <input id="dueDate" type="text" value ="${invoices.dueDate}">
+                                  <input id="dueDate" type="text" value ="${ (new Date(invoices.dueDate).getMonth() + 1).toString() + "/" + new Date(invoices.dueDate).getDate().toString() + "/" + new Date(invoices.dueDate).getFullYear().toString()}">
                               </div>
                               </div>
                           </div>  
